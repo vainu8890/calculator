@@ -6,7 +6,18 @@ var hidden = document.getElementById("hidden");
 let operator ; 
 
 function sign(x){
-  
+   if(operator=="+"){
+      num.value =  parseFloat(hidden.value) + parseFloat(num.value); 
+   }
+   if(operator=="-"){
+       num.value =  parseFloat(hidden.value) - parseFloat(num.value); 
+    }
+    if(operator=="*"){
+       num.value =  parseFloat(hidden.value) * parseFloat(num.value); 
+    }
+    if(operator=="/"){
+       num.value =  parseFloat(hidden.value) / parseFloat(num.value); 
+    }
 hidden.value = num.value ;
 num.value = "";
 
@@ -18,16 +29,16 @@ num.focus();
 function equal (){
 console.log(operator);
     if(operator=="+"){
-       num.value =  parseInt(hidden.value) + parseInt(num.value); 
+       num.value =  parseFloat(hidden.value) + parseFloat(num.value); 
     }
     if(operator=="-"){
-        num.value =  parseInt(hidden.value) - parseInt(num.value); 
+        num.value =  parseFloat(hidden.value) - parseFloat(num.value); 
      }
      if(operator=="*"){
-        num.value =  parseInt(hidden.value) * parseInt(num.value); 
+        num.value =  parseFloat(hidden.value) * parseFloat(num.value); 
      }
      if(operator=="/"){
-        num.value =  parseInt(hidden.value) / parseInt(num.value); 
+        num.value =  parseFloat(hidden.value) / parseFloat(num.value); 
      }
 }
 
