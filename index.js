@@ -6,18 +6,7 @@ var hidden = document.getElementById("hidden");
 let operator ; 
 
 function sign(x){
-   if(operator=="+"){
-      num.value =  parseFloat(hidden.value) + parseFloat(num.value); 
-   }
-   if(operator=="-"){
-       num.value =  parseFloat(hidden.value) - parseFloat(num.value); 
-    }
-    if(operator=="*"){
-       num.value =  parseFloat(hidden.value) * parseFloat(num.value); 
-    }
-    if(operator=="/"){
-       num.value =  parseFloat(hidden.value) / parseFloat(num.value); 
-    }
+   equal();
 hidden.value = num.value ;
 num.value = "";
 
